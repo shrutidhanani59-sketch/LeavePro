@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .leftPart{
-    background-color: rgba(206, 222, 247, 0.842);
+    background-color: rgba(213, 226, 246, 0.842);
     width: 49%;
     height: 100vh;
 }
@@ -14,6 +14,7 @@
 }
 .heading{
     margin-left: 300px;
+    padding-top: 20px;
 }
 .head{
     margin-left: 300px;
@@ -21,9 +22,364 @@
 .login-img{
     height: 600px;
     width: 600px;
-    margin-left: 120px;
+    margin-left: 140px;
 }
 .para{
-    margin-left: 300px;
+    margin-left: 320px;
     color: rgb(0, 0, 83);
+}
+.rightPart{
+    margin-left: 90px;
+    margin-top: 50px;
+}
+input{
+    width: 800px;
+}
+.loginBtn{
+    width: 800px;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color:rgb(41, 90, 250) ; 
+    color: white;
+    transition: 1s;
+}
+.loginBtn:hover{
+    
+    background-color:rgb(28, 75, 247) ; 
+   
+}
+.rightPart span{
+    color:rgb(6, 63, 249) ;
+}
+.demoBox{
+    height: 300px;
+}
+.user{
+    height: 60px;
+}
+
+
+
+/* Large Desktop: 1600px and above */
+@media (min-width: 1600px) {
+    .heading {
+        margin-left: 300px;
+    }
+
+    .head {
+        margin-left: 300px;
+    }
+
+    .login-img {
+        width: 600px;
+        height: 600px;
+        margin-left: 140px;
+    }
+
+    .para {
+        margin-left: 320px;
+    }
+
+    .rightPart {
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+}
+
+/* Laptop: 1200px to 1599px */
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .heading,
+    .head {
+        margin-left: 100px;
+    }
+
+    .login-img {
+        width: 600px;
+        height: 600px;
+        max-width: 100%;
+        object-fit: contain;
+        margin-left: 30px;
+    }
+
+    .para {
+        margin-left: 100px;
+        font-size: 40px;
+    }
+
+    .rightPart {
+        margin-left: 35px;
+        margin-top: 40px;
+        width: calc(51% - 35px);
+    }
+
+    input,
+    .loginBtn {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Small Laptop: 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .leftPart {
+        width: 42%;
+    }
+
+    .heading,
+    .head {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .heading {
+        justify-content: center;
+    }
+
+    .login-img {
+        width: 450px;
+        height: 450px;
+        max-width: 100%;
+        object-fit: contain;
+        margin: 30px auto 10px;
+    }
+
+    .para {
+        margin-left: 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .rightPart {
+        width: 54%;
+        margin: 40px 0 0 25px;
+    }
+
+    input,
+    .loginBtn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .demoBox {
+        height: auto;
+        min-height: 250px;
+        padding-bottom: 20px;
+    }
+}
+
+/* Tablet: 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .leftPart {
+        width: 40%;
+        height: auto;
+        min-height: 100vh;
+        padding: 20px 10px;
+    }
+
+    .heading,
+    .head,
+    .para {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .heading {
+        gap: 5px;
+        margin-left: 60px;
+    }
+
+    .heading p {
+        font-size: 25px;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .head {
+        font-size: 14px;
+    }
+
+    .login-img {
+        width: 100%;
+        max-width: 300px;
+        height: 350px;
+        width: 350px;
+        
+        margin: 35px auto 15px;
+    }
+
+    .para {
+        font-size: 17px;
+    }
+
+    .rightPart {
+        width: 56%;
+        margin: 30px 0 0 20px;
+    }
+
+    input,
+    .loginBtn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .demoBox {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .user {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Mobile: 481px to 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .leftPart {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .heading {
+        margin-left: 0;
+        padding-top: 0;
+        justify-content: center;
+    }
+
+    .head {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .login-img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .para {
+        margin-left: 0;
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .rightPart {
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+    }
+
+    input,
+    .loginBtn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .demoBox {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+/* Small Mobile: 480px and below */
+@media (max-width: 480px) {
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .leftPart {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 18px 15px;
+    }
+
+    .heading {
+        margin-left: 0;
+        padding-top: 0;
+        justify-content: center;
+    }
+
+    .heading p {
+        font-size: 28px;
+    }
+
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .head {
+        margin-left: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .login-img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .para {
+        margin-left: 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .rightPart {
+        width: 100%;
+        margin: 0;
+        padding: 25px 18px;
+    }
+
+    .rightPart h1 {
+        font-size: 27px;
+    }
+
+    .rightPart input,
+    .loginBtn,
+    input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .loginBtn {
+        margin-top: 20px;
+    }
+
+    .demoBox {
+        width: 100%;
+        height: auto;
+        padding: 0 12px 18px;
+    }
+
+    .demo1 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .user {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .demo1 p {
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
 }
